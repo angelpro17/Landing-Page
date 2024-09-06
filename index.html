@@ -22,18 +22,19 @@
 
 <!--INICIO HEADER-->
 <header class="header">
-
     <div class="logoUF">
-        <img src="img/logoGoUni.png" alt="logoUF">
+        <a href="index.html">
+            <img src="img/logoGoUni.png" alt="logoUF">
+        </a>
     </div>
     <nav class="navbar">
         <a href="#inicio">Inicio</a>
+        <a href="#funcionalidad">Funcion</a>
         <a href="#beneficios">Beneficios</a>
         <a href="#planes">Planes</a>
-        <a href="#nosotros">Nosotros</a>
+        <a href="#conocenos">Conocenos</a>
         <a href="#contacto">Contacto</a>
     </nav>
-
     
     <div class="header-right">
         <div class="language-selector">
@@ -51,27 +52,28 @@
 </header>
 
 
+
 <!--INICIO HOME-->
-<section class="home" id="home">
+<section class="home" id="inicio">
     <div class="content">
         <h3>ㅤㅤ</h3>
         <h3>Viaja cómodo, seguro y<br>económico con GoUni</h3>
         <p>Comparte viajes con tus compañeros de universidad. Ahorra <br>dinero, haz amigos y cuida el medio ambiente.</p>
-        <div class="join-form">
-            <input type="email" placeholder="Tu correo universitario" required>
-            <button class="join-btn" id="joinBtn">Unirme</button>
-        </div>
-        <a href="#" class="login-link">¿Ya tienes cuenta? Iniciar sesión</a>
+        <form id="joinForm" action="index2.html" method="GET">
+            <div class="join-form">
+                <input type="email" id="emailInput" placeholder="Tu correo universitario" required>
+                <button type="submit" class="join-btn" id="joinBtn">Unirme</button>
+            </div>
+            <a href="#" class="login-link">¿Ya tienes cuenta? Iniciar sesión</a>
+        </form>
     </div>
-
-
 </section>
 
 
 <!--FIN HOME-->
 
 
-<section class="how-it-works">
+<section class="how-it-works" id="funcionalidad">
     <h2>Cómo<br> <span>Funciona</span></h2>
     <div class="steps-container">
         <div class="step">
@@ -92,7 +94,7 @@
     </div>
 </section>
 <!--Section Benefits-->>
-<section class="benefits">
+<section class="benefits" id="beneficios">
     <div>
         <div class="group1">
             <p class="title">Conoce<span><br>Nuestros<br>Beneficios de GoUni</span></p>
@@ -168,7 +170,7 @@
 
 
  <!-- Sección de Planes -->
-<section class="plans">
+<section class="plans" id="planes">
     <h2>Conoce</h2>
     <h2 class="our-plans">Nuestros Planes</h2>
     <div class="plan-cards">
@@ -219,7 +221,7 @@
   <!--END PLANS-->
 
   <!--sECCTION OURAPP-->
-  <section class="ourApp&Portals">
+  <section class="ourApp&Portals" id="conocenos">
     <h2>Conoce a <br><span>Nuestras<br> Apps y Portales</span></h2>
     <div class="content">
         <div class="section">
@@ -244,7 +246,7 @@
 <!--Contact Section-->
 
 <section class="contacto" id="contacto">
-    <h2>Como puedes<br><span>Conttactarnos</span></h2>
+    <h2>Como puedes<br><span>Contactarnos</span></h2>
     <div id="container">
         <h1 data-i18n="contact_us"> &bull; Contact Us&bull;   </h1>
         <div class="underline">
