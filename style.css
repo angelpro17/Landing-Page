@@ -1313,13 +1313,6 @@ p {
       
   }
   
-/*OurApp*/
-.ourApp&Portals {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
 
 h2 {
     font-size: 36px;
@@ -1333,106 +1326,10 @@ h2 span {
     font-size: 50px;
 }
 
-.content {
-    margin-bottom: 20px;
-}
-
-.section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.section:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.portal-image, .mobile-image {
-    width: 50%;
-    max-width: 450px;
-    border-radius: 8px;
-}
-
-.text-content {
-    width: 50%;
-    padding: 20px;
-    text-align: left;
-    margin-left: 20rem;
-}
-
-.text-content2{
-    width: 50%;
-    padding: 20px;
-    text-align: left;
-    margin-right: 20rem;
-}
-
-p {
-    font-size: 28px;
-    color: #555;
-}
-
-.buttons {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    width: 344px;
-    height: 80px;
-    gap: 0px;
-    border-radius: 100px;
-    cursor: pointer;
-    color: white;
-}
-
-
-.google-play {
-    background-color: #4285F4;
-    font-size: 40px;
-}
-
-.apple-store {
-    background-color: #333;
-    font-size: 40px;
-
-}
-
-
-/* Tablet adjustments */
-@media (max-width: 768px) {
-    .portal-image, .mobile-image {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .text-content, .text-content2 {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 32px;
-    }
-
-    h2 span {
-        font-size: 40px;
-    }
-
-    p {
-        font-size: 24px;
-    }
-}
 /*Contact*/
 .contacto {
     padding: 5rem 9%;
-    background-color: rgba(232, 144, 65, 1); /* Color de fondo como en la imagen */
+    background-color: var(--bg);
     text-align: left; /* Texto centrado */
     height:1000px;
     top: 1084px;
