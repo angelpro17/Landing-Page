@@ -43,6 +43,7 @@
                 <option value="en">English</option>
             </select>
         </div>
+       
         <button class="login-btn" onclick="window.open('##', '_blank')">Log In</button>
         <button class="register-btn" onclick="window.open('##', '_blank')">Register</button>
     </div>
@@ -60,7 +61,7 @@
         <p>Comparte viajes con tus compañeros de universidad. Ahorra <br>dinero, haz amigos y cuida el medio ambiente.</p>
         <form id="joinForm" action="index2.html" method="GET">
             <div class="join-form">
-                <input type="email" id="emailInput" placeholder="Tu correo universitario" required>
+                <input type="email" id="emailInput" name="email" placeholder="Tu correo universitario" required>
                 <button type="submit" class="join-btn" id="joinBtn">Unirme</button>
             </div>
             <a href="#" class="login-link">¿Ya tienes cuenta? Iniciar sesión</a>
@@ -315,9 +316,3 @@ document.getElementById("form_button").addEventListener("click", function(event)
 <script src="/script.js"></script>
 </body>
 </html>
-<!--Scrips JS-->
-<script src="/script.js">
-</script>
-</body>
-</html>
-

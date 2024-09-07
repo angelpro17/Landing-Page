@@ -95,7 +95,7 @@ section{
     font-size: 1.4rem;
     margin: 0 1.5rem;
     margin-right: 50rem;
-    padding: 2rem; /*modificado*/
+    padding: 2rem;
     color: #ffffff;
     text-decoration: none;
 }
@@ -720,7 +720,7 @@ mybutton {
 
 .footer-bottom {
     display: flex;
-    justify-content: center; /* Cambiado para centralizar el contenido */
+    justify-content: center; 
     align-items: center;
     padding-top: 20px;
 }
@@ -737,18 +737,25 @@ mybutton {
 .footer-social a {
     color: #ffffff;
     align-items: center;
-
     font-size: 18px;
     margin-left: 20px;
 }
 
 .footer-legal {
-    margin-right: 2rem; /* Asegura que los enlaces de políticas estén a la izquierda */
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
 }
 
 .footer-social {
-    margin-top: 3rem;
-    margin-left: 3rem; /* Aumenta el margen izquierdo para separar de las políticas */
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 5rem;
 }
 
 .footer-copyright {
@@ -756,7 +763,7 @@ mybutton {
     text-align: center;
     align-items: center;
     color: var(--bg);
-    margin: 0 auto; /* Asegura que el copyright esté centrado */
+    margin: 0 auto; 
 }
 
 @media (max-width: 768px) {
@@ -766,7 +773,7 @@ mybutton {
 
     .footer-content, .footer-main, .footer-bottom {
         flex-direction: column;
-        align-items: center; /* Centra los elementos en pantallas pequeñas */
+        align-items: center; 
         text-align: center;
     }
 
@@ -785,10 +792,9 @@ mybutton {
     }
 
     .footer-social {
-        margin-left: 0; /* Remueve el margen izquierdo para centrar los iconos */
+        margin-left: 0; 
         margin-top: 15px;
         margin-left: -5rem;
-        /* Reduce el margen superior para pantallas pequeñas */
     }
 
     .footer-legal {
@@ -805,15 +811,24 @@ mybutton {
     }
 
     .footer-logo img {
-        height: 100px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+        height: 100px; 
         width: 100px;
         margin-bottom: 10px;
+        margin-left: 4rem;
+    }
+    
+    .footer-logo h2 {
+        font-size: 20px;
+        color: var(--bg);
+        margin: 0;
+        margin-left: 2.5rem;
+        text-align: center;
     }
 }
 
 
 .how-it-works {
-    background-color: #FFFFFF; /* Fondo gris claro */
+    background-color: #FFFFFF;
     height:1101px;
     top: 1084px;
     width: auto;
@@ -847,7 +862,7 @@ mybutton {
 }
 
 .step img {
-    width: 240px; /* Asegúrate de ajustar el tamaño según lo necesites */
+    width: 240px; 
     height: 240px;
     top: 345px;
     left: 1295px;
@@ -878,7 +893,8 @@ mybutton {
         min-height: 100vh; /* Mínimo toda la altura de la ventana */
     }
     .contenedor-grid {
-        grid-template-columns: 1fr; /* Una columna en móviles */
+        grid-template-columns: 1fr ;/* Una columna en móviles */
+        margin-left:-100px;
     }
 
     .cuadro {
@@ -926,6 +942,7 @@ mybutton {
 .group1 {
     margin: auto;
     text-align: center;
+    line-height: -10px;
 }
 
 .group1 p {
@@ -935,7 +952,7 @@ mybutton {
     color: white;
     margin-bottom: 20px;
     text-align: left;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .group1 p span {
@@ -1037,7 +1054,7 @@ p {
 .security-content {
     flex: 1;
     padding-right: 2rem;
-    margin-top: -10rem; /* Removed the negative margin */
+    margin-top: -10rem; 
 }
 
 .security-content h2 {
@@ -1080,7 +1097,7 @@ p {
 
 .security-image {
     flex: 1;
-    margin-top: 2rem; /* Added margin for spacing */
+    margin-top: 2rem;
 }
 
 .security-image img {
@@ -1119,7 +1136,7 @@ p {
 
     .security-image img {
         width: 100%;
-        margin-top: 1rem; /* Ensure proper spacing */
+        margin-top: 1rem; 
     }
 }
 
@@ -1127,8 +1144,8 @@ p {
 /*planes*/
 .plans {
     padding: 5rem 9%;
-    background-color: rgba(232, 144, 65, 1); /* Color de fondo como en la imagen */
-    text-align: left; /* Texto centrado */
+    background-color: rgba(232, 144, 65, 1); 
+    text-align: left;
     height:1101px;
     top: 1084px;
     width: auto;
@@ -1156,7 +1173,7 @@ p {
     border-radius: 10px;
     padding: 3rem 2rem;
     flex: 1;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: all 0.3s ease;
     width: 383.37px;
@@ -1165,11 +1182,11 @@ p {
   
   .plan-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
   }
   
   .featured {
-    border: 5px solid var(--black); /* Resaltado del plan estudiante */
+    border: 5px solid var(--black); 
   }
   
   .plan-card h3 {
@@ -1185,7 +1202,7 @@ p {
     font-size: 48px;
     font-weight: bold;
     border-bottom: 2px solid var(--black);
-    color: var(--black); /* Color del precio */
+    color: var(--black); 
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -1221,17 +1238,17 @@ p {
     text-align: center;
   }
   .plan-card ul li:before {
-    content: '✔'; /* Icono de verificación */
+    content: '✔'; 
     margin-right: 0.5rem;
-    color: #fff; /* Color del icono */
+    color: #fff; 
     width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Para hacerlo completamente redondo */
-    background-color: #012840; /* Color de fondo */
-    opacity: 1; /* Asegúrate de que el fondo sea visible */
+    border-radius: 50%; 
+    background-color: #012840; 
+    opacity: 1; 
 }
 
   
@@ -1250,7 +1267,7 @@ p {
   }
   
   .plan-card button:hover {
-    background-color: #e64a2e; /* Cambio de color al pasar por encima */
+    background-color: #e64a2e;
   }
   
   .plan-card .cancel {
@@ -1287,7 +1304,7 @@ p {
     }
     .plan-card {
       margin-bottom: 2rem;
-        margin-left: 100px;
+        margin-left: -32    px;
         
     }
 
@@ -1330,7 +1347,7 @@ h2 span {
 .contacto {
     padding: 5rem 9%;
     background-color: var(--bg);
-    text-align: left; /* Texto centrado */
+    text-align: left; 
     height:1000px;
     top: 1084px;
     width: auto;
@@ -1816,10 +1833,10 @@ h2 span {
 
 @media screen and (max-width: 768px) {
     .equipo .box-container {
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Ajustar las columnas en pantallas más pequeñas */
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
     }
 
     .equipo .box-container .box {
-        height: auto; /* Ajustar altura para pantallas más pequeñas */
+        height: auto; 
     }
 }
